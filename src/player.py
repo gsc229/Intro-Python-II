@@ -3,8 +3,9 @@
 
 
 class Player:
-    def __init__(self, current_room):
+    def __init__(self, current_room, *items):
         self.current_room = current_room
+        self.items = []
 
     def __str__(self):
         return "%s" % (self.current_room)
